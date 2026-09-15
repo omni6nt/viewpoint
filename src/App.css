@@ -97,7 +97,6 @@ button {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
   padding: 4px 8px 30px;
 }
 
@@ -1314,7 +1313,7 @@ button {
 
 @media (max-width: 600px) {
   .dashboard {
-    padding: 20px 12px 85px;
+    padding: 30px 15px 85px;
   }
 
   .metric-grid {
@@ -1381,7 +1380,10 @@ button {
   }
 
   .dashboard-footer {
-    display: none;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    padding-bottom: 90px;
   }
 
   .epoch-footer {
@@ -1579,7 +1581,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
 }
 
 .mobile-logo-mark {
@@ -1613,4 +1614,16 @@ button {
 
 .footer-links a:hover {
   color: var(--ember);
+}
+
+@media (max-width: 600px) {
+  .info-tip-bubble {
+    position: fixed;
+    left: 50%;
+    bottom: 90px;
+    top: auto;
+    transform: translateX(-50%);
+    width: calc(100vw - 40px);
+    max-width: 300px;
+  }
 }
