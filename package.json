@@ -12,6 +12,7 @@
   "dependencies": {
     "@0xintuition/protocol": "^2.0.3",
     "@samoris/tns-sdk": "^1.0.2",
+    "@vercel/speed-insights": "^2.0.0",
     "ethers": "^6.17.0",
     "framer-motion": "^13.2.0",
     "react": "^19.2.8",
